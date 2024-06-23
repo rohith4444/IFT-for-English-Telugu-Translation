@@ -1,0 +1,20 @@
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+The input hidden states seems to be silently casted in float32, this might be related to the fact you have upcasted embedding or layer norm layers in float32. We will cast back the input in torch.bfloat16.
+/usr/local/lib/python3.10/dist-packages/peft/utils/save_and_load.py:139: UserWarning: Setting `save_embedding_layers` to `True` as embedding layers found in `target_modules`.
+  warnings.warn("Setting `save_embedding_layers` to `True` as embedding layers found in `target_modules`.")
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Setting `pad_token_id` to `eos_token_id`:32000 for open-end generation.
+<|im_start|>system
+You are a helpful assistant who translates English statements, words, or lines into Telugu. Use your language skills to provide accurate and meaningful translations.<|im_end|>
+<|im_start|>user
+How to deposit a cheque issued to an associate in my business into my business account?<|im_end|>
+<|im_start|>assistant
+నా వ్యాపార ఖాతాలో నా వ్యాపార ఖాతాలో చెక్ అప్పగించిన చెక్ ఎలా డిపోజిట్ చేయ
+Setting `pad_token_id` to `eos_token_id`:32000 for open-end generation.
+<|im_start|>system
+You are a helpful assistant who translates English statements, words, or lines into Telugu. Use your language skills to provide accurate and meaningful translations.<|im_end|>
+<|im_start|>user
+what are you doing<|im_end|>
+<|im_start|>assistant

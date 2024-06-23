@@ -1,0 +1,9 @@
+{
+  "<pad>": 32001,
+  "<|im_end|>": 32000,
+  "<|im_start|>assistant": 32003,
+  "<|im_start|>function-call": 32005,
+  "<|im_start|>function-response": 32006,
+  "<|im_start|>system": 32004,
+  "<|im_start|>user": 32002
+}
