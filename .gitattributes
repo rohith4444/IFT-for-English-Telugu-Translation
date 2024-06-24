@@ -1,1 +1,1 @@
-Model_Weights/adapter_model.safetensors filter=lfs diff=lfs merge=lfs -text
+Translator_Eng_Tel_instruct/adapter_model.safetensors filter=lfs diff=lfs merge=lfs -text
