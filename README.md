@@ -37,6 +37,17 @@ To get started with this project, follow these steps:
 
    Open inference.ipynb in Jupyter Notebook or JupyterLab. Update the path to the model weights (Model_Weights/) as necessary. Execute the notebook to perform inference and try out translating English statements to Telugu.
 
+## Using the Model from Hugging Face:
+
+You can simply use the model from Hugging Face with the following code:
+```python
+from peft import PeftModel, PeftConfig
+from transformers import AutoModelForCausalLM
+
+config = PeftConfig.from_pretrained("MRR24/Translator_Eng_Tel_instruct")
+base_model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.2")
+model = PeftModel.from_pretrained(base_model, "MRR24/Translator_Eng_Tel_instruct")
+```
 ## Dataset
 
   The dataset used in this project was sourced from Socionoftech/Sai kumar Yava. A shoutout to them for providing the dataset.
